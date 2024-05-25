@@ -1,0 +1,618 @@
+{
+    "New South Wales": {
+        "2010": {
+            "Health care workers": 378.2,
+            "Employed total of the state": 3412.6,
+            "Health care workers percentage": 11.082459122077008
+        },
+        "2011": {
+            "Health care workers": 411.7,
+            "Employed total of the state": 3526.7,
+            "Health care workers percentage": 11.673802705078403
+        },
+        "2012": {
+            "Health care workers": 410.8,
+            "Employed total of the state": 3507.9,
+            "Health care workers percentage": 11.710710111462697
+        },
+        "2013": {
+            "Health care workers": 435.2,
+            "Employed total of the state": 3592.7,
+            "Health care workers percentage": 12.113452278230858
+        },
+        "2014": {
+            "Health care workers": 464.0,
+            "Employed total of the state": 3597.2,
+            "Health care workers percentage": 12.89892138329812
+        },
+        "2015": {
+            "Health care workers": 462.4,
+            "Employed total of the state": 3658.5,
+            "Health care workers percentage": 12.63905972393057
+        },
+        "2016": {
+            "Health care workers": 489.0,
+            "Employed total of the state": 3801.6,
+            "Health care workers percentage": 12.86300505050505
+        },
+        "2017": {
+            "Health care workers": 476.7,
+            "Employed total of the state": 3789.5,
+            "Health care workers percentage": 12.579495975722391
+        },
+        "2018": {
+            "Health care workers": 523.3,
+            "Employed total of the state": 3942.4,
+            "Health care workers percentage": 13.27364042207792
+        },
+        "2019": {
+            "Health care workers": 516.9,
+            "Employed total of the state": 4056.7,
+            "Health care workers percentage": 12.741883797175044
+        },
+        "2020": {
+            "Health care workers": 574.4,
+            "Employed total of the state": 4079.1,
+            "Health care workers percentage": 14.081537594077126
+        },
+        "2021": {
+            "Health care workers": 527.0,
+            "Employed total of the state": 4063.3,
+            "Health care workers percentage": 12.969753648512292
+        },
+        "2022": {
+            "Health care workers": 613.8,
+            "Employed total of the state": 4146.9,
+            "Health care workers percentage": 14.801417926644
+        },
+        "2023": {
+            "Health care workers": 634.5,
+            "Employed total of the state": 4338.7,
+            "Health care workers percentage": 14.624196187798189
+        },
+        "2024": {
+            "Health care workers": 672.2,
+            "Employed total of the state": 4428.9,
+            "Health care workers percentage": 15.177583598636232
+        }
+    },
+    "Victoria": {
+        "2010": {
+            "Health care workers": 299.4,
+            "Employed total of the state": 2728.5,
+            "Health care workers percentage": 10.973062122045079
+        },
+        "2011": {
+            "Health care workers": 321.7,
+            "Employed total of the state": 2814.2,
+            "Health care workers percentage": 11.43131262881103
+        },
+        "2012": {
+            "Health care workers": 330.1,
+            "Employed total of the state": 2805.5,
+            "Health care workers percentage": 11.766173587595794
+        },
+        "2013": {
+            "Health care workers": 340.1,
+            "Employed total of the state": 2864.3,
+            "Health care workers percentage": 11.873756240617254
+        },
+        "2014": {
+            "Health care workers": 358.8,
+            "Employed total of the state": 2876.3,
+            "Health care workers percentage": 12.474359420088307
+        },
+        "2015": {
+            "Health care workers": 360.8,
+            "Employed total of the state": 3006.6,
+            "Health care workers percentage": 12.000266081287835
+        },
+        "2016": {
+            "Health care workers": 386.8,
+            "Employed total of the state": 3078.5,
+            "Health care workers percentage": 12.564560662660387
+        },
+        "2017": {
+            "Health care workers": 419.1,
+            "Employed total of the state": 3182.8,
+            "Health care workers percentage": 13.167651124795777
+        },
+        "2018": {
+            "Health care workers": 400.4,
+            "Employed total of the state": 3239.9,
+            "Health care workers percentage": 12.358406123645791
+        },
+        "2019": {
+            "Health care workers": 433.3,
+            "Employed total of the state": 3364.7,
+            "Health care workers percentage": 12.877819716468036
+        },
+        "2020": {
+            "Health care workers": 477.4,
+            "Employed total of the state": 3410.8,
+            "Health care workers percentage": 13.996716312888472
+        },
+        "2021": {
+            "Health care workers": 462.5,
+            "Employed total of the state": 3367.5,
+            "Health care workers percentage": 13.734224201930214
+        },
+        "2022": {
+            "Health care workers": 511.7,
+            "Employed total of the state": 3484.6,
+            "Health care workers percentage": 14.684612294094013
+        },
+        "2023": {
+            "Health care workers": 555.6,
+            "Employed total of the state": 3610.8,
+            "Health care workers percentage": 15.387171817879693
+        },
+        "2024": {
+            "Health care workers": 582.5,
+            "Employed total of the state": 3737.6,
+            "Health care workers percentage": 15.58486729452055
+        }
+    },
+    "Queensland": {
+        "2010": {
+            "Health care workers": 235.6,
+            "Employed total of the state": 2203.5,
+            "Health care workers percentage": 10.692080780576356
+        },
+        "2011": {
+            "Health care workers": 257.0,
+            "Employed total of the state": 2227.8,
+            "Health care workers percentage": 11.53604452823413
+        },
+        "2012": {
+            "Health care workers": 275.2,
+            "Employed total of the state": 2263.8,
+            "Health care workers percentage": 12.156550932061135
+        },
+        "2013": {
+            "Health care workers": 281.7,
+            "Employed total of the state": 2281.6,
+            "Health care workers percentage": 12.346598877980366
+        },
+        "2014": {
+            "Health care workers": 294.6,
+            "Employed total of the state": 2310.7,
+            "Health care workers percentage": 12.749383303760768
+        },
+        "2015": {
+            "Health care workers": 289.9,
+            "Employed total of the state": 2337.5,
+            "Health care workers percentage": 12.402139037433155
+        },
+        "2016": {
+            "Health care workers": 297.7,
+            "Employed total of the state": 2392.8,
+            "Health care workers percentage": 12.441491140086926
+        },
+        "2017": {
+            "Health care workers": 285.6,
+            "Employed total of the state": 2364.4,
+            "Health care workers percentage": 12.079174420571816
+        },
+        "2018": {
+            "Health care workers": 366.2,
+            "Employed total of the state": 2484.6,
+            "Health care workers percentage": 14.73879095226596
+        },
+        "2019": {
+            "Health care workers": 379.0,
+            "Employed total of the state": 2523.5,
+            "Health care workers percentage": 15.018823063205867
+        },
+        "2020": {
+            "Health care workers": 353.4,
+            "Employed total of the state": 2575.2,
+            "Health care workers percentage": 13.723205964585276
+        },
+        "2021": {
+            "Health care workers": 372.2,
+            "Employed total of the state": 2608.1,
+            "Health care workers percentage": 14.270925194586098
+        },
+        "2022": {
+            "Health care workers": 437.3,
+            "Employed total of the state": 2741.6,
+            "Health care workers percentage": 15.950539830755764
+        },
+        "2023": {
+            "Health care workers": 454.6,
+            "Employed total of the state": 2801.7,
+            "Health care workers percentage": 16.225862868972413
+        },
+        "2024": {
+            "Health care workers": 444.7,
+            "Employed total of the state": 2930.8,
+            "Health care workers percentage": 15.173331513579907
+        }
+    },
+    "South Australia": {
+        "2010": {
+            "Health care workers": 98.5,
+            "Employed total of the state": 801.7,
+            "Health care workers percentage": 12.286391418236247
+        },
+        "2011": {
+            "Health care workers": 105.1,
+            "Employed total of the state": 802.9,
+            "Health care workers percentage": 13.09004857391954
+        },
+        "2012": {
+            "Health care workers": 104.5,
+            "Employed total of the state": 808.6,
+            "Health care workers percentage": 12.92357160524363
+        },
+        "2013": {
+            "Health care workers": 114.1,
+            "Employed total of the state": 809.4,
+            "Health care workers percentage": 14.096861872992339
+        },
+        "2014": {
+            "Health care workers": 107.7,
+            "Employed total of the state": 797.7,
+            "Health care workers percentage": 13.501316284317413
+        },
+        "2015": {
+            "Health care workers": 127.5,
+            "Employed total of the state": 802.7,
+            "Health care workers percentage": 15.883891864955773
+        },
+        "2016": {
+            "Health care workers": 123.0,
+            "Employed total of the state": 809.6,
+            "Health care workers percentage": 15.19268774703557
+        },
+        "2017": {
+            "Health care workers": 125.1,
+            "Employed total of the state": 822.5,
+            "Health care workers percentage": 15.209726443768995
+        },
+        "2018": {
+            "Health care workers": 142.8,
+            "Employed total of the state": 850.9,
+            "Health care workers percentage": 16.782230579386535
+        },
+        "2019": {
+            "Health care workers": 123.7,
+            "Employed total of the state": 854.2,
+            "Health care workers percentage": 14.481386092250059
+        },
+        "2020": {
+            "Health care workers": 127.5,
+            "Employed total of the state": 865.5,
+            "Health care workers percentage": 14.731369150779896
+        },
+        "2021": {
+            "Health care workers": 132.6,
+            "Employed total of the state": 863.4,
+            "Health care workers percentage": 15.35788742182071
+        },
+        "2022": {
+            "Health care workers": 158.4,
+            "Employed total of the state": 904.2,
+            "Health care workers percentage": 17.51824817518248
+        },
+        "2023": {
+            "Health care workers": 163.9,
+            "Employed total of the state": 936.5,
+            "Health care workers percentage": 17.501334757074215
+        },
+        "2024": {
+            "Health care workers": 172.7,
+            "Employed total of the state": 952.6,
+            "Health care workers percentage": 18.12933025404157
+        }
+    },
+    "Western Australia": {
+        "2010": {
+            "Health care workers": 120.9,
+            "Employed total of the state": 1187.7,
+            "Health care workers percentage": 10.179338216721394
+        },
+        "2011": {
+            "Health care workers": 116.0,
+            "Employed total of the state": 1209.9,
+            "Health care workers percentage": 9.587569220596743
+        },
+        "2012": {
+            "Health care workers": 144.8,
+            "Employed total of the state": 1283.6,
+            "Health care workers percentage": 11.280772826425679
+        },
+        "2013": {
+            "Health care workers": 137.5,
+            "Employed total of the state": 1308.7,
+            "Health care workers percentage": 10.50660961259265
+        },
+        "2014": {
+            "Health care workers": 138.9,
+            "Employed total of the state": 1301.5,
+            "Health care workers percentage": 10.672301190933538
+        },
+        "2015": {
+            "Health care workers": 148.3,
+            "Employed total of the state": 1334.5,
+            "Health care workers percentage": 11.112776320719371
+        },
+        "2016": {
+            "Health care workers": 153.8,
+            "Employed total of the state": 1311.9,
+            "Health care workers percentage": 11.723454531595397
+        },
+        "2017": {
+            "Health care workers": 148.4,
+            "Employed total of the state": 1304.3,
+            "Health care workers percentage": 11.377750517518976
+        },
+        "2018": {
+            "Health care workers": 170.9,
+            "Employed total of the state": 1335.8,
+            "Health care workers percentage": 12.793831411888007
+        },
+        "2019": {
+            "Health care workers": 157.7,
+            "Employed total of the state": 1359.1,
+            "Health care workers percentage": 11.60326686778015
+        },
+        "2020": {
+            "Health care workers": 171.3,
+            "Employed total of the state": 1404.5,
+            "Health care workers percentage": 12.196511213955146
+        },
+        "2021": {
+            "Health care workers": 203.7,
+            "Employed total of the state": 1393.3,
+            "Health care workers percentage": 14.619966984856097
+        },
+        "2022": {
+            "Health care workers": 198.2,
+            "Employed total of the state": 1492.8,
+            "Health care workers percentage": 13.27706323687031
+        },
+        "2023": {
+            "Health care workers": 211.5,
+            "Employed total of the state": 1531.1,
+            "Health care workers percentage": 13.813598066749396
+        },
+        "2024": {
+            "Health care workers": 261.7,
+            "Employed total of the state": 1606.3,
+            "Health care workers percentage": 16.292099856813795
+        }
+    },
+    "Tasmania": {
+        "2010": {
+            "Health care workers": 29.7,
+            "Employed total of the state": 235.1,
+            "Health care workers percentage": 12.632922160782645
+        },
+        "2011": {
+            "Health care workers": 31.0,
+            "Employed total of the state": 238.1,
+            "Health care workers percentage": 13.019739605207898
+        },
+        "2012": {
+            "Health care workers": 32.5,
+            "Employed total of the state": 235.1,
+            "Health care workers percentage": 13.823904721395152
+        },
+        "2013": {
+            "Health care workers": 33.4,
+            "Employed total of the state": 235.2,
+            "Health care workers percentage": 14.200680272108842
+        },
+        "2014": {
+            "Health care workers": 32.3,
+            "Employed total of the state": 233.0,
+            "Health care workers percentage": 13.862660944206006
+        },
+        "2015": {
+            "Health care workers": 31.7,
+            "Employed total of the state": 241.4,
+            "Health care workers percentage": 13.131731565865781
+        },
+        "2016": {
+            "Health care workers": 34.0,
+            "Employed total of the state": 238.1,
+            "Health care workers percentage": 14.279714405711886
+        },
+        "2017": {
+            "Health care workers": 35.9,
+            "Employed total of the state": 242.3,
+            "Health care workers percentage": 14.816343375980189
+        },
+        "2018": {
+            "Health care workers": 37.2,
+            "Employed total of the state": 253.2,
+            "Health care workers percentage": 14.691943127962087
+        },
+        "2019": {
+            "Health care workers": 39.8,
+            "Employed total of the state": 256.0,
+            "Health care workers percentage": 15.546874999999998
+        },
+        "2020": {
+            "Health care workers": 41.8,
+            "Employed total of the state": 270.3,
+            "Health care workers percentage": 15.464298927118014
+        },
+        "2021": {
+            "Health care workers": 42.5,
+            "Employed total of the state": 273.4,
+            "Health care workers percentage": 15.544989027066569
+        },
+        "2022": {
+            "Health care workers": 44.6,
+            "Employed total of the state": 284.5,
+            "Health care workers percentage": 15.676625659050966
+        },
+        "2023": {
+            "Health care workers": 49.4,
+            "Employed total of the state": 285.6,
+            "Health care workers percentage": 17.296918767506998
+        },
+        "2024": {
+            "Health care workers": 50.9,
+            "Employed total of the state": 282.5,
+            "Health care workers percentage": 18.01769911504425
+        }
+    },
+    "Australian Capital Territory": {
+        "2010": {
+            "Health care workers": 16.6,
+            "Employed total of the state": 204.3,
+            "Health care workers percentage": 8.12530592266275
+        },
+        "2011": {
+            "Health care workers": 19.4,
+            "Employed total of the state": 205.4,
+            "Health care workers percentage": 9.444985394352482
+        },
+        "2012": {
+            "Health care workers": 20.2,
+            "Employed total of the state": 209.9,
+            "Health care workers percentage": 9.623630300142924
+        },
+        "2013": {
+            "Health care workers": 21.6,
+            "Employed total of the state": 211.0,
+            "Health care workers percentage": 10.23696682464455
+        },
+        "2014": {
+            "Health care workers": 20.6,
+            "Employed total of the state": 213.5,
+            "Health care workers percentage": 9.648711943793911
+        },
+        "2015": {
+            "Health care workers": 21.8,
+            "Employed total of the state": 209.9,
+            "Health care workers percentage": 10.385898046688899
+        },
+        "2016": {
+            "Health care workers": 24.4,
+            "Employed total of the state": 212.6,
+            "Health care workers percentage": 11.47695202257761
+        },
+        "2017": {
+            "Health care workers": 22.8,
+            "Employed total of the state": 222.1,
+            "Health care workers percentage": 10.265646105357948
+        },
+        "2018": {
+            "Health care workers": 25.2,
+            "Employed total of the state": 232.5,
+            "Health care workers percentage": 10.838709677419354
+        },
+        "2019": {
+            "Health care workers": 23.1,
+            "Employed total of the state": 233.8,
+            "Health care workers percentage": 9.880239520958083
+        },
+        "2020": {
+            "Health care workers": 25.6,
+            "Employed total of the state": 246.8,
+            "Health care workers percentage": 10.372771474878444
+        },
+        "2021": {
+            "Health care workers": 29.3,
+            "Employed total of the state": 247.6,
+            "Health care workers percentage": 11.833602584814216
+        },
+        "2022": {
+            "Health care workers": 30.3,
+            "Employed total of the state": 252.3,
+            "Health care workers percentage": 12.009512485136742
+        },
+        "2023": {
+            "Health care workers": 32.2,
+            "Employed total of the state": 267.4,
+            "Health care workers percentage": 12.041884816753928
+        },
+        "2024": {
+            "Health care workers": 29.9,
+            "Employed total of the state": 266.6,
+            "Health care workers percentage": 11.215303825956488
+        }
+    },
+    "Northern Territory": {
+        "2010": {
+            "Health care workers": 13.7,
+            "Employed total of the state": 115.8,
+            "Health care workers percentage": 11.830742659758203
+        },
+        "2011": {
+            "Health care workers": 14.5,
+            "Employed total of the state": 121.1,
+            "Health care workers percentage": 11.973575557390587
+        },
+        "2012": {
+            "Health care workers": 14.3,
+            "Employed total of the state": 123.3,
+            "Health care workers percentage": 11.597729115977291
+        },
+        "2013": {
+            "Health care workers": 16.2,
+            "Employed total of the state": 122.5,
+            "Health care workers percentage": 13.224489795918368
+        },
+        "2014": {
+            "Health care workers": 17.2,
+            "Employed total of the state": 134.6,
+            "Health care workers percentage": 12.778603268945021
+        },
+        "2015": {
+            "Health care workers": 16.4,
+            "Employed total of the state": 133.1,
+            "Health care workers percentage": 12.321562734785875
+        },
+        "2016": {
+            "Health care workers": 14.7,
+            "Employed total of the state": 130.9,
+            "Health care workers percentage": 11.22994652406417
+        },
+        "2017": {
+            "Health care workers": 16.7,
+            "Employed total of the state": 134.1,
+            "Health care workers percentage": 12.453392990305742
+        },
+        "2018": {
+            "Health care workers": 20.6,
+            "Employed total of the state": 133.3,
+            "Health care workers percentage": 15.453863465866466
+        },
+        "2019": {
+            "Health care workers": 19.9,
+            "Employed total of the state": 130.1,
+            "Health care workers percentage": 15.295926210607224
+        },
+        "2020": {
+            "Health care workers": 19.9,
+            "Employed total of the state": 130.2,
+            "Health care workers percentage": 15.284178187403993
+        },
+        "2021": {
+            "Health care workers": 24.3,
+            "Employed total of the state": 133.0,
+            "Health care workers percentage": 18.270676691729324
+        },
+        "2022": {
+            "Health care workers": 24.4,
+            "Employed total of the state": 131.6,
+            "Health care workers percentage": 18.541033434650455
+        },
+        "2023": {
+            "Health care workers": 25.3,
+            "Employed total of the state": 135.8,
+            "Health care workers percentage": 18.630338733431515
+        },
+        "2024": {
+            "Health care workers": 25.8,
+            "Employed total of the state": 139.4,
+            "Health care workers percentage": 18.507890961262554
+        }
+    }
+}
