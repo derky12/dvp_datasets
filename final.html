@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Australia Map</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #svganchor {
+        width: 750px;
+        height: 600px;
+        margin: 20px auto;
+      }
+
+      .active {
+        stroke-width: 0.5px;
+      }
+
+      #charts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      .chart {
+        margin: 20px;
+        width: 900px;
+        height: 600px;
+      }
+
+      #intro-box {
+        width: 80%;
+        margin: 70px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        visibility: visible; /* Initially visible */
+      }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- load the self written function for the charts -->
+    <script src="population_pyramid.js"></script>
+    <script src="age_group_pct-fertility.js"></script>
+    <script src="care_worker.js"></script>
+  </head>
+  <body>
+    <div id="svganchor"></div>
+    <div id="intro-box"></div>
+    <div id="charts">
+      <div id="population_pyramid_chart" class="chart"></div>
+      <div id="age_group_pct-fertility_chart" class="chart"></div>
+      <div id="care_worker_chart" class="chart"></div>
+    </div>
+
+    <script type="text/javascript">
+      //Width and height
+      var w = 750;
+      var h = 600;
+
+      //Define map projection
+      var projection = d3
+        .geoMercator()
+        .center([132, -28])
+        .translate([w / 2, h / 2])
+        .scale(840);
+
+      //Define path generator
+      var path = d3.geoPath(projection);
+
+      var color = d3
+        .scaleOrdinal()
+        .range([
+          "#a6cee3",
+          "#f6e8c3",
+          "#b2df8a",
+          "#c2a5cf",
+          "#ffffb3",
+          "#fbb4ae",
+          "#fdbf6f",
+          "#ff7f00",
+          "#cab2d6",
+        ]);
+
+      // Add title to the map
+      d3.select("#svganchor")
+        .append("h2")
+        .attr("id", "plot-title")
+        .style("text-align", "center")
+        .text(`Australia's Ageing Population Trends`);
+
+      //Create SVG
+      var svg = d3
+        .select("#svganchor")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
+
+      //Load in GeoJSON data
+      d3.json("https://raw.githubusercontent.com/derky12/dvp_datasets/main/australia_map_by_state.json").then(function (json) {
+        var states = svg
+          .selectAll("path")
+          .data(json.features)
+          .enter()
+          .append("path");
+
+        var names = svg
+          .selectAll("text")
+          .data(json.features)
+          .enter()
+          .append("text");
+
+        var active = d3.select(null);
+
+        states
+          .attr("d", path)
+          .attr("class", function (d) {
+            return d.properties.STATE_NAME.replace(/\s/g, "");
+          })
+          .attr("stroke", "dimgray")
+          .attr("opacity", 1)
+          .attr("fill", function (d, i) {
+            return color(i);
+          })
+          .on("click", drawstate);
+
+        names
+          .attr("pointer-events", "none")
+          .attr("class", function (d) {
+            return d.properties.STATE_NAME.replace(/\s/g, "");
+          })
+          .attr("fill", "darkslategray")
+          .attr("transform", function (d) {
+            var centroid = path.centroid(d);
+
+            if (d.properties.STATE_NAME != "ACT") {
+              return "translate(" + centroid + ")";
+            } else {
+              return (
+                "translate(" + centroid[0] + "," + (centroid[1] - 16) + ")"
+              );
+            }
+          })
+          .attr("text-anchor", "middle")
+          .attr("dy", ".35em")
+          .attr("font-family", "PT Serif")
+          .attr("font-size", 15)
+          .attr("opacity", 1)
+          .text(function (d) {
+            return d.properties.STATE_NAME;
+          });
+
+        // Load the intro.json file
+        var introText;
+        d3.json("https://raw.githubusercontent.com/derky12/dvp_datasets/main/intro.json").then(function (data) {
+          introText = data;
+
+          // Update the intro-box content with Australia's text
+          d3.select("#intro-box").html(introText["Australia"]);
+        });
+
+        function drawstate(event, d) {
+          if (active.node() === this) return reset();
+          active = d3.select(this).classed("active", true);
+
+          // Update the intro-box content with state-specific text
+          d3.select("#intro-box").html(introText[d.properties.STATE_NAME]);
+
+          var bounds = path.bounds(d),
+            dx = bounds[1][0] - bounds[0][0],
+            dy = bounds[1][1] - bounds[0][1],
+            x = (bounds[0][0] + bounds[1][0]) / 2,
+            y = (bounds[0][1] + bounds[1][1]) / 2,
+            scale = 0.95 / Math.max(dx / w, dy / h),
+            translate = [w / 2 - scale * x, h / 2 - scale * y];
+
+          states
+            .transition()
+            .duration(1000)
+            .attr(
+              "transform",
+              "translate(" + translate + ")scale(" + scale + ")"
+            )
+            .attr("stroke-width", 1 / scale + "px")
+            .attr("opacity", function (d) {
+              return d3.select(this).classed("active") ? 1 : 0;
+            });
+
+          states.attr("pointer-events", "none");
+          d3.select(".active").attr("pointer-events", "all");
+
+          names
+            .transition()
+            .duration(1000)
+            .attr("opacity", function () {
+              var textclass = this.className.baseVal.split(" ")[0];
+              if (d.properties.STATE_NAME.replace(/\s/g, "") == textclass) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+
+          var textclass = this.className.baseVal.split(" ")[0];
+          d3.select("text." + textclass)
+            .transition()
+            .duration(1000)
+            .attr(
+              "transform",
+              "translate(" + w / 2 + "," + h / 2 + ")scale(" + 2 + ")"
+            );
+
+          drawCharts(d.properties.STATE_NAME);
+        }
+
+        function reset() {
+          active.classed("active", false);
+          active = d3.select(null);
+
+          d3.select("#intro-box").html(introText["Australia"]);
+
+          states
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 1)
+            .attr("opacity", 1)
+            .attr("pointer-events", "all")
+            .attr("transform", "");
+
+          names
+            .transition()
+            .duration(1000)
+            .attr("transform", function (d) {
+              var centroid = path.centroid(d);
+
+              if (d.properties.STATE_NAME != "ACT") {
+                return "translate(" + centroid + ")";
+              } else {
+                return (
+                  "translate(" + centroid[0] + "," + (centroid[1] - 16) + ")"
+                );
+              }
+            })
+            .attr("opacity", 1)
+            .text(function (d) {
+              return d.properties.STATE_NAME;
+            });
+
+          // Hide the charts
+          d3.select("#population_pyramid_chart").html("");
+          d3.select("#age_group_pct-fertility_chart").html("");
+          d3.select("#care_worker_chart").html("");
+        }
+
+        function drawCharts(state) {
+          // Create chart containers
+          d3.select("body").append("div").attr("id", "chartContainer");
+
+          var chartContainer = d3.select("#chartContainer");
+
+          chartContainer
+            .append("div")
+            .attr("id", "population_pyramid_chart")
+            .attr("class", "chart");
+          chartContainer
+            .append("div")
+            .attr("id", "age_group_pct-fertility_chart")
+            .attr("class", "chart");
+          chartContainer
+            .append("div")
+            .attr("id", "care_worker_chart")
+            .attr("class", "chart");
+
+          // const data = sampleData[state];
+
+          setTimeout(function () {
+            draw_population_pyramid(state);
+            draw_age_fertility(state);
+            draw_care_worker_pct(state);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
